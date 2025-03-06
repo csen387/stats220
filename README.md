@@ -24,7 +24,7 @@ A meme that captures how I currently feel about my university studies is ![](htt
 2. Big Data Engineering
 3. Programming Skills
 
-- I would like to further study about Big Data Engineering and Cloud Computing and this video actually motivated me further [Motivation video](https://www.youtube.com/watch?v=9R3X0JoCLyU) and I am very delighted that my university [My university link](https://www.auckland.ac.nz/en.html) has many opportunities to fullfill my dream.
+- I would like to further study about **Big Data Engineering** and **Cloud Computing** and this video actually motivated me further [Motivation video](https://www.youtube.com/watch?v=9R3X0JoCLyU) and I am very delighted that my university [My university link](https://www.auckland.ac.nz/en.html) has many opportunities to fullfill my dream.
 
 - The meme that describe my current mood of stressfulness is ![](https://c.tenor.com/qKBP44O5488AAAAd/tenor.gif)
 - And this is the link to my GitHub repo [MY GitHub](https://github.com/csen387/stats220)
