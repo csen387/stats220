@@ -10,9 +10,9 @@ A little about me:
 A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
 
 
-#Stat 220 - Project 1
+# Stat 220 - Project 1
 
-##About my **Data science** degree:
+## About my **Data science** degree:
 
 ### *The subjects I am taking are:*
    - Statistics
@@ -20,9 +20,9 @@ A meme that captures how I currently feel about my university studies is ![](htt
    - Computer Science
      
 ### *Three Main Skills I can develop by studying Data Science are :*
-1.Machine Learning
-2.Big Data Engineering
-3.Programming Skills
+1. Machine Learning
+2. Big Data Engineering
+3. Programming Skills
 
 - I would like to further study about Big Data Engineering and Cloud Computing and this video actually motivated me further [Motivation video](https://www.youtube.com/watch?v=9R3X0JoCLyU) and I am very delighted that my university [My university link](https://www.auckland.ac.nz/en.html) has many opportunities to fullfill my dream.
 
