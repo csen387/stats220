@@ -10,27 +10,6 @@ A little about me:
 A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
 
 
-
-
-# stats220
-## This is my repo for **STATS 220**. 
-
-### A little about me:
-
-1. I am undertaking a degree in *Data Science*
-2. I am taking **STATS 220** because I want to learn further about :
-     1. R programming 
-     2. Data technologies.
-3. I am interested in learning about
-     - Data Visualisation
-     - Gain skills of HTML and CSS 
-     - learn how to solve data science challenges using R programming.
-     - Stay motivated in my studies and this video actually motivated me further [Motivation video](https://www.youtube.com/watch?v=9R3X0JoCLyU)
-
-A meme that captures how I currently feel about my university studies is ![mood](https://c.tenor.com/qKBP44O5488AAAAd/tenor.gif)
-
-
-
 # Stat 220 - Project 1
 
 ## About my **Data science** degree:
