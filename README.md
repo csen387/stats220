@@ -18,7 +18,7 @@ A meme that captures how I currently feel about my university studies is ![](htt
 ### A little about me:
 
 1. I am undertaking a degree in *Data Science*
-2. I am taking STATS 220 because I want to learn further about :
+2. I am taking **STATS 220** because I want to learn further about :
      1. R programming 
      2. Data technologies.
 3. I am interested in learning about
