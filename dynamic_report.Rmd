@@ -74,7 +74,7 @@ latest_data <- logged_data %>%
     Wind_Speed = 'What is the Wind Speed (km/h) ?',
     Visibility = 'What is the Visibility?')
 
-latest_data
+
 
 
 ```
