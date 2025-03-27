@@ -161,7 +161,7 @@ The **Bar chart (i)** shows how Temperature affects Visibility while **Bar chart
 
 
 
-
+Additionally I have created a animation meme using **magick package** and it is about how the weather affects the mood which helped to shows the creative side of this report.
 
 
 
