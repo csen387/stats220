@@ -1,0 +1,155 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE,fig.width = 6, fig.height = 4)
+library(tidyverse)
+```
+
+
+
+```{css}
+body {
+    color:  #0B5345    ;
+    background-color: #EAF2F8       ;
+    font-family:'Georgia',cursive;
+}
+h1 {
+  color: #0B5345    ;
+  background-color: white;
+  padding: 20px;
+  font-weight : bold
+
+}
+h2 {
+  color:#0B5345    ;
+  background-color: white;
+  font-weight : bold;
+}
+
+
+
+```
+
+
+## Effect of Temperature and Weather Types on the Visibility
+
+- This report tells that how these different factors affect on the **Visibility** such as :
+  - Temperature
+  - Weather Type
+  
+  
+  
+  
+- My survey was about to collect the data about *Daily Weather Observations* . In there I collected data about;
+  1. Temperature
+  2. Humidity
+  3. Wind Speed
+  4. Weather Type
+  5. Visibility
+
+
+I have created *2 Bar Charts* to show the relationship between **Temperature**, **Weather Type** on **Visibility**
+
+
+
+
+```{r}
+
+#loading data from csv url
+
+csv_file <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDOfFFR4SL_dCeIpvr_rrdFjkmHGmVdblsf9baVI_DRPOfmDMr2zr6fH2eVAh3ju9UBdk0q093f-HR/pub?gid=1796296273&single=true&output=csv"
+logged_data <- read_csv(csv_file) 
+
+
+
+#renaming columns for easy references
+
+latest_data <- logged_data %>%
+  rename(Temperature = 'What is the temperature (In Celcius) this time?',
+    Weather = 'What is the general weather condition?',
+    Humidity = 'What is the humidity (in %)?',
+    Wind_Speed = 'What is the Wind Speed (km/h) ?',
+    Visibility = 'What is the Visibility?')
+
+latest_data
+
+
+```
+
+
+```{r}
+#Calculating min temp
+minimum_temp <- min(latest_data$Temperature, na.rm =TRUE)
+
+
+#Calculating max temp
+maximum_temp <- max(latest_data$Temperature, na.rm =TRUE)
+
+
+#Calculating Mean Temp and round it to 1 decimal place
+mean_temp <- mean(latest_data$Temperature, na.rm=TRUE) %>% round(1)
+
+
+#Number of rows of Temperature Column
+#Total number of observations of Temperature
+length_temp <- length(latest_data$Temperature)
+
+
+
+```
+The **mean temperature** recorded was **`r mean_temp`**°C, the **maximum temperature** was **`r maximum_temp`**°C, and the **minimum temperature** was **`r minimum_temp`**°C.
+
+Additionally, the total number of recorded observations for temperature is **`r length_temp`**.
+
+
+
+```{r}
+#Number of rows of Visibility as it is categorical only length used.
+#Total number of observations of Visibility
+length_Visibility <-  length(latest_data$Visibility)
+
+paste0('The Number of Rows in Visibility Column is ', length_Visibility,'.')
+
+```
+
+
+```{r fig.width = 8, fig.height = 4}
+
+
+
+#BAR CHART (i) : Comparing Temperature and Visibility
+#Create a plot Temperature of the first 10 rows of Temperature in latest_data using the x-axis for the Temperature. 
+#And fill the color of each bar using the Visibility.
+#using labs to add titles , x and y axis
+
+latest_data %>%
+  ggplot() +
+  geom_bar(aes( x= Temperature,fill= Visibility)) +
+  labs(title ="How the Temperature Affects What We See!", 
+       subtitle = "Comparing Temperature and Visibility",
+       x = 'Temperature (°C)',
+       y= 'Number_of_observations')
+
+
+
+
+
+
+#BAR CHART (ii): 
+#We can see How each Weather Types affects the visibility by creating a bar chart
+
+latest_data %>%
+  ggplot() +
+  geom_bar(aes( x= Weather,fill= Visibility)) +
+  labs(title ="How the Visibility Changes according to the type of Weather!", 
+       subtitle = "Comparing Weather types and Visibility",
+       x = 'Weather Type',
+       y= 'Number_of_observations')
+
+```
+
+
+The **Bar chart (i)** shows how Temperature affects Visibility while **Bar chart (ii)** explains how Visibility changes depending on each type of Weather. 
