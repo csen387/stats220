@@ -135,7 +135,8 @@ latest_data %>%
   labs(title ="How the Temperature Affects What We See!", 
        subtitle = "Comparing Temperature and Visibility",
        x = 'Temperature (°C)',
-       y= 'Number_of_observations')
+       y= 'Number_of_observations',
+caption = "Source: Weather survey")
 
 
 
@@ -151,7 +152,8 @@ latest_data %>%
   labs(title ="How the Visibility Changes according to the type of Weather!", 
        subtitle = "Comparing Weather types and Visibility",
        x = 'Weather Type',
-       y= 'Number_of_observations')
+       y= 'Number_of_observations',
+caption = "Source: Weather survey")
 
 ```
 
