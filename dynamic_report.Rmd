@@ -86,7 +86,7 @@ minimum_temp <- min(latest_data$Temperature, na.rm =TRUE)
 
 
 #Calculating max temp
-maximum_temp <- max(latest_data$Temperature, na.rm =TRUE)
+maximum_temp <- max(latest_data$Temperature, na.rm =TRUE) 
 
 
 #Calculating Mean Temp and round it to 1 decimal place
