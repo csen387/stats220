@@ -37,14 +37,14 @@ h2 {
 
 ## Effect of Temperature and Weather Types on the Visibility
 
-- This report tells that how these different factors affect on the **Visibility** such as :
+- This report examines how different factors affect **Visibility**. such as; :
   - Temperature
   - Weather Type
   
   
   
   
-- My survey was about to collect the data about *Daily Weather Observations* . In there I collected data about;
+- My survey focused on collecting data from **Daily Weather Observations**, including:;
   1. Temperature
   2. Humidity
   3. Wind Speed
@@ -100,9 +100,13 @@ length_temp <- length(latest_data$Temperature)
 
 
 ```
-The **mean temperature** recorded was **`r mean_temp`**°C, the **maximum temperature** was **`r maximum_temp`**°C, and the **minimum temperature** was **`r minimum_temp`**°C.
+According to Summary Values of **Temperature**;
 
-Additionally, the total number of recorded observations for temperature is **`r length_temp`**.
+The **mean temperature** recorded was **`r mean_temp`**°C. 
+
+The **maximum temperature** was **`r maximum_temp`**°C, while the **minimum temperature** was **`r minimum_temp`**°C.
+
+The total number of recorded observations for temperature is **`r length_temp`**.
 
 
 
@@ -111,7 +115,7 @@ Additionally, the total number of recorded observations for temperature is **`r 
 #Total number of observations of Visibility
 length_Visibility <-  length(latest_data$Visibility)
 
-paste0('The Number of Rows in Visibility Column is ', length_Visibility,'.')
+paste('The dataset contains',  length_Visibility , 'recorded observations of visibility', '.')
 
 ```
 
@@ -155,13 +159,20 @@ latest_data %>%
 The **Bar chart (i)** shows how Temperature affects Visibility while **Bar chart (ii)** explains how Visibility changes depending on each type of Weather. 
 
 
+According to **Bar chart (i)** we can see ;
+when the *temperature is higher* the visbility is **very clear** except for just 3 observations.
+When the *temperature is lower* there is a high possibility of having **foggy and very foggy conditions**.
+
+
+According to **Bar chart (ii)** we can see;
+*Sunny conditions* have linked with the **higher visibility**.
+During *cloudy conditions* it is more likely to be **very foggy and foggy**
+*Rainy conditions* have mostly been recorded as **foggy**.
 
 
 
 
-
-
-Additionally I have created a animation meme using **magick package** and it is about how the weather affects the mood which helped to shows the creative side of this report.
+Additionally I have created a animation meme using **magick package** and it is about how the weather affects the mood which making the report more engaging.
 
 
 
