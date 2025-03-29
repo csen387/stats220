@@ -37,14 +37,14 @@ h2 {
 
 ## Effect of Temperature and Weather Types on the Visibility
 
-- This report examines how different factors affect **Visibility**. such as; :
+- This report examines how different factors affect **Visibility**. such as :
   - Temperature
   - Weather Type
   
   
   
   
-- My survey focused on collecting data from **Daily Weather Observations**, including:;
+- My survey focused on collecting data from **Daily Weather Observations**, including:
   1. Temperature
   2. Humidity
   3. Wind Speed
