@@ -226,8 +226,6 @@ animation <- c(first, second) %>%
 
 animation
 
-#saving animation
-image_write(animation,'my_animated_weather_meme.gif')
 
 
 ```
