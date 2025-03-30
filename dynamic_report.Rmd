@@ -129,7 +129,7 @@ paste('The dataset contains',  length_Visibility , 'recorded observations of vis
 #And fill the color of each bar using the Visibility.
 #using labs to add titles , x and y axis
 
-latest_data %>%
+temp_vs_visibility_plot <- latest_data %>%
   ggplot() +
   geom_bar(aes( x= Temperature,fill= Visibility)) +
   labs(title ="How the Temperature Affects What We See!", 
@@ -138,7 +138,7 @@ latest_data %>%
        y= 'Number_of_observations',
 caption = "Source: Weather survey")
 
-
+temp_vs_visibility_plot
 
 
 
@@ -146,7 +146,7 @@ caption = "Source: Weather survey")
 #BAR CHART (ii): 
 #We can see How each Weather Types affects the visibility by creating a bar chart
 
-latest_data %>%
+weather_vs_visiblity_plot <- latest_data %>%
   ggplot() +
   geom_bar(aes( x= Weather,fill= Visibility)) +
   labs(title ="How the Visibility Changes according to the type of Weather!", 
@@ -154,6 +154,8 @@ latest_data %>%
        x = 'Weather Type',
        y= 'Number_of_observations',
 caption = "Source: Weather survey")
+
+weather_vs_visiblity_plot
 
 ```
 
